@@ -32,6 +32,11 @@ function clearEmployeeListOnLinkClick(){
   debugger
   let link = document.querySelector('a')
   link.addEventListener('click', function(event) {
-    list.removeChild(list.querySelectorAll('li'))
+  // let lis = list.querySelectorAll('li')
+  // for (let i = 0; i < lis.length; i++) {
+  //   lis[i].remove()
+  //   }
+  list.innerHTML=""
   })
+
 }
